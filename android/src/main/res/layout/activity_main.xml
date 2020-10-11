@@ -50,7 +50,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/ic_back" />
 
-    <ImageView
+    <!-- <ImageView
         android:id="@+id/swCam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/ic_switch" />
+        android:background="@drawable/ic_switch" /> -->
 
 
 </RelativeLayout>
