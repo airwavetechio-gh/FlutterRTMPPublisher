@@ -40,7 +40,7 @@
         android:paddingTop="8dp"
         android:text="@string/start_publishing" />
 
-    <!-- <ImageView
+    <ImageView
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/ic_back" /> -->
+        android:background="@drawable/ic_back" />
 
     <!-- <ImageView
         android:id="@+id/swCam"

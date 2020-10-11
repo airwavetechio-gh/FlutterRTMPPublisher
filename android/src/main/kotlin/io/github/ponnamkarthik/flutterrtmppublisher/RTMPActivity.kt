@@ -52,8 +52,7 @@ class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandl
 
         btnPublish = findViewById<Button>(R.id.publish)
 //        btnSwitchCamera = findViewById<ImageView>(R.id.swCam)
-//        btnBack = findViewById<ImageView>(R.id.backButton)
-          btnBack = findViewById<Button>(R.id.publish)
+          btnBack = findViewById<ImageView>(R.id.backButton)
 //        btnPause = findViewById(R.id.pause) as Button
 //        btnPause.isEnabled = false
         mPublisher = SrsPublisher(findViewById<SrsCameraView>(R.id.glsurfaceview_camera))
@@ -82,7 +81,6 @@ class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandl
             } else if (btnPublish.text.toString().contains("Stop")) {
                 mPublisher.stopPublish()
                 mPublisher.stopRecord()
-                this.onBackPressed()
                 btnPublish.text = getString(R.string.start_publishing)
 
 //                btnPause.isEnabled = false
