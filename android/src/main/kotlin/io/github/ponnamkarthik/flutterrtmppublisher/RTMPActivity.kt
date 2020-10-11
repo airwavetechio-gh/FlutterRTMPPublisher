@@ -81,7 +81,7 @@ class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandl
             } else if (btnPublish.text.toString().contains("Stop")) {
                 mPublisher.stopPublish()
                 mPublisher.stopRecord()
-                this.onBackPressed()
+                btnBack.onBackPressed()
                 btnPublish.text = getString(R.string.start_publishing)
 
 //                btnPause.isEnabled = false
