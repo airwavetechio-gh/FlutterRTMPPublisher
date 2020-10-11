@@ -1,0 +1,22 @@
+name: flutter_rtmp_publisher
+description: This Plugins helps to brodcast Live via RTMP right from your flutter application
+version: 0.0.1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    androidPackage: io.github.airwavetechio-gh.flutterrtmppublisher
+    pluginClass: FlutterRtmpPublisherPlugin
+
+  assets:
+   - images/
