@@ -29,7 +29,7 @@ import java.util.Random
 
 class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandler.SrsRecordListener, SrsEncodeHandler.SrsEncodeListener {
     private lateinit var btnPublish: Button
-//    private lateinit var btnSwitchCamera:ImageView
+ //   private lateinit var btnSwitchCamera:ImageView
     private lateinit var btnBack:ImageView
 //    private lateinit var btnPause:Button
     private lateinit var sp:SharedPreferences
@@ -51,7 +51,7 @@ class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandl
         rtmpUrl = intent.getStringExtra("url")
 
         btnPublish = findViewById<Button>(R.id.publish)
-        btnSwitchCamera = findViewById<ImageView>(R.id.swCam)
+//        btnSwitchCamera = findViewById<ImageView>(R.id.swCam)
         btnBack = findViewById<ImageView>(R.id.backButton)
 //        btnPause = findViewById(R.id.pause) as Button
 //        btnPause.isEnabled = false
@@ -95,9 +95,9 @@ class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandl
 //                btnPause.text = "Pause"
 //            }
 //        }
-        btnSwitchCamera.setOnClickListener {
-            mPublisher.switchCameraFace((mPublisher.cameraId + 1) % Camera.getNumberOfCameras())
-        }
+//        btnSwitchCamera.setOnClickListener {
+//            mPublisher.switchCameraFace((mPublisher.cameraId + 1) % Camera.getNumberOfCameras())
+//        }
 
         btnBack.setOnClickListener {
             var msg = "";
@@ -141,7 +141,7 @@ class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandl
         super.onConfigurationChanged(newConfig)
         mPublisher.stopEncode()
         mPublisher.stopRecord()
-        mPublisher.setScreenOrientation(newConfig.orientation)
+        // mPublisher.setScreenOrientation(newConfig.orientation)
         if (btnPublish.text.toString().contentEquals("stop"))
         {
             mPublisher.startEncode()
