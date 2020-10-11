@@ -1,4 +1,4 @@
-package io.github.airwavetechio-gh.flutterrtmppublisher
+package io.github.ponnamkarthik.flutterrtmppublisher
 
 import android.util.Log
 import io.flutter.plugin.common.PluginRegistry.Registrar

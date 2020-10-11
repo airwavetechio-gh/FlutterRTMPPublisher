@@ -1,4 +1,4 @@
-package io.github.airwavetechio-gh.flutterrtmppublisher
+package io.github.ponnamkarthik.flutterrtmppublisher
 
 import android.content.SharedPreferences
 import android.content.pm.ActivityInfo
