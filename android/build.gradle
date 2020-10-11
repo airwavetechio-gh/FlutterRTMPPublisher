@@ -1,4 +1,4 @@
-group 'io.github.ponnamkarthik.flutterrtmppublisher'
+group 'io.github.airwavetechio-gh.flutterrtmppublisher'
 version '1.0-SNAPSHOT'
 
 buildscript {

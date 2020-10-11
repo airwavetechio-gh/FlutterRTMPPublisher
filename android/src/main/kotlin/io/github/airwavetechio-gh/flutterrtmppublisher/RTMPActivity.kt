@@ -1,4 +1,4 @@
-package io.github.ponnamkarthik.flutterrtmppublisher
+package io.github.airwavetechio-gh.flutterrtmppublisher
 
 import android.content.SharedPreferences
 import android.content.pm.ActivityInfo
@@ -29,7 +29,7 @@ import java.util.Random
 
 class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandler.SrsRecordListener, SrsEncodeHandler.SrsEncodeListener {
     private lateinit var btnPublish: Button
-    private lateinit var btnSwitchCamera:ImageView
+//    private lateinit var btnSwitchCamera:ImageView
     private lateinit var btnBack:ImageView
 //    private lateinit var btnPause:Button
     private lateinit var sp:SharedPreferences
@@ -42,7 +42,7 @@ class RTMPActivity:AppCompatActivity(), RtmpHandler.RtmpListener, SrsRecordHandl
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         setContentView(R.layout.activity_main)
         // response screen rotation event
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR)
+        // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR)
         // restore data.
 
 
